@@ -1,0 +1,17 @@
+add ran with args: (30, 10), and kwargs: {}
+add ran with args: (30, 10), and kwargs: {}
+add ran with args: (30, 10), and kwargs: {}
+add ran with args: (30, 10), and kwargs: {}
+add ran with args: (30, 10), and kwargs: {}
+add ran with args: (30, 10), and kwargs: {}
+add ran with args: (30, 10), and kwargs: {}
+add ran with args: (30, 10), and kwargs: {}
+add ran with args: (30, 10), and kwargs: {}
+add ran with args: (30, 10), and kwargs: {}
+my_func ran in 1.0843238830566406s
+my_func : 1.0922503471374512
+my_func : 1.0851004123687744
+my_func : 1.0992202758789062
+my_func : 1.096707820892334
+my_func : 1.0829436779022217
+my_func : 1.0886216163635254
