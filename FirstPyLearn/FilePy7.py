@@ -31,12 +31,13 @@ def writeMessage():
     global message
     global filename
     opts, args = getopt.getopt(sys.argv[1:], "f:m:", ["filename", "message"])
+    print(opts, args)
     for opt, arg in opts:
         if opt == "-f":
-            filename = opt
+            filename = opts[0][1]
         if opt == "-m":
             message = arg
-    with open(filename, "a+") as f:
+    with open(filename, "w+") as f:
         f.write(message + "\n")
 
 
