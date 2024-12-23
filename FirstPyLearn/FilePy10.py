@@ -25,7 +25,7 @@ from abc import ABCMeta, abstractmethod
 class IPerson(metaclass=ABCMeta):
     @abstractmethod
     def person_method(self):
-        pass
+        """ person_method """
 
 
 class Student(IPerson):
