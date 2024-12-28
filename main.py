@@ -1,14 +1,16 @@
-from abc import ABCMeta, abstractmethod,ABC
+def father(some):
+    def use(things):
+        print("father")
+        print(things)
+        # some()
 
-class IPerson(metaclass=ABCMeta):
-    @abstractmethod
-    def say_something(self,some):
-        """ say hello """
-        pass
+    return use
 
-class S1(IPerson):
-    def say_something(self,some):
-        print(some)
 
-s1=S1()
-s1.say_something("hello")
+@father
+def son(x):
+    print("son")
+    print("son : ", x)
+
+
+son("传入参数-1")

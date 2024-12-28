@@ -1,5 +1,10 @@
 """
     装饰器
+    执行顺序：
+        例如，如果你有两个装饰器 @decorator1 和 @decorator2，并且你将它们应用于同一个函数 func，那么执行顺序将是：
+            decorator1 的代码
+            decorator2 的代码
+            func 的代码
 """
 
 
