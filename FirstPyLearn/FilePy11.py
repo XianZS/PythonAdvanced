@@ -7,7 +7,8 @@
     @Date    : 2024/12/23 09:03 
     @NowThing: 代理设计模式
 """
-from abc import ABCMeta,abstractmethod
+from abc import ABCMeta, abstractmethod
+# 在设计抽象接口时，ABCMeta 和 abstractmethod 是 Python 标准库中的两个装饰器，用于定义抽象类和抽象方法。
 
 # 抽象层
 """
@@ -15,6 +16,7 @@ from abc import ABCMeta,abstractmethod
     * IPerson 接口
     * IDo 接口
 """
+
 
 class IPerson(metaclass=ABCMeta):
     @abstractmethod
@@ -27,26 +29,33 @@ class IDo(metaclass=ABCMeta):
     def do_something(self):
         """ do_something """
 
-class Person(IPerson,IDo):
+
+class Person(IPerson, IDo):
     def say_something(self):
         print("say_something")
+
     def do_something(self):
         print("do_something")
+
 
 # 接口层
 """
     通过继承抽象接口，实现抽象接口的方法
     IAll
 """
-class IAll(IPerson,IDo):
+
+
+class IAll(IPerson, IDo):
     def __init__(self):
         self.person = Person()
+
     def say_something(self):
         self.person.say_something()
+
     def do_something(self):
         self.person.do_something()
-someone=IAll()
+
+
+someone = IAll()
 someone.say_something()
 someone.do_something()
-
-
