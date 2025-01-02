@@ -12,14 +12,15 @@ import gc
 
 
 class TreeNode:
-    def __init(self, parent=None):
+    def __init__(self, parent=None):
         self.left = None
         self.right = None
         self.parent = parent
 
 
 node1 = TreeNode()
-node2 = TreeNode()
+node2 = TreeNode(parent=node1)
+# 循环引用
 node1.left = node2
 
 del node1
